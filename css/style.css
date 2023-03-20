@@ -218,11 +218,6 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -12105,10 +12100,23 @@ h5,
 }
 
 .logo-sigem {
-  width: 500px;
-  height: 250px;
+  max-width: 320px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
 }
 
-.esqueci-senha {
+.img-banner {
+  vertical-align: baseline;
+  border-style: none;
+  max-width: 620px;
+  max-height: 800px;
+  width: 600px;
+  height: 600px;
+  padding-top: 25px;
+}
+
+/*.esqueci-senha {
   word-wrap: normal
 }
+*/
