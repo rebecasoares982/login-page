@@ -1,192 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Login 04</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+	<title>Login 04</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
-	</head>
-	<body>
+</head>
+
+<body>
 	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<img src="images/logo-sigem.png" alt="Descrição da imagem">
-				</div>
+		<!-- <div class="container"> -->
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center mb-5">
+				<img class="logo-sigem" src="images/sigem.png" alt="Descrição da imagem">
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-12 col-lg-10">
-					<div class="wrap d-md-flex">
-						<div class="img" style="background-image: url(images/bg-1.jpg);">
-			      </div>
-						<div class="login-wrap p-4 p-md-5">
-			      	<div class="d-flex">
-			      		<div class="w-100">
-			      			<h3 class="mb-4">Login</h3>
-			      		</div>
-			      	</div>
-					  <div class="form-group mb-3">
-						<label class="label" for="estado">Estado</label>
-						<select class="form-control" id="estado" required>
-							<option value="">Selecione o estado</option>
-							<option value="sp">São Paulo</option>
-							<option value="rj">Rio de Janeiro</option>
-							<option value="mg">Minas Gerais</option>
-						</select>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-12 col-lg-10">
+				<div class="wrap d-md-flex">
+					<div class="img" style="background-image: url(images/imagem-sigem.jpeg);">
 					</div>
-					<div class="form-group mb-3">
-						<label class="label" for="municipio">Município</label>
-						<select class="form-control" id="municipio" required>
-							<option value="">Selecione o município</option>
-							<option value="saopaulo">São Paulo</option>
-							<option value="riodejaneiro">Rio de Janeiro</option>
-							<option value="belohorizonte">Belo Horizonte</option>
-						</select>
-					</div>
-					
-						<div class="checkbox-wrap d-flex align-items-center">
+					<div class="login-wrap p-4 p-md-5">
+						<div class="d-flex">
+							<div class="w-100">
+								<h3 class="mb-4">Login</h3>
+							</div>
+						</div>
+						<div class="form-group mb-3">
+							<label class="label" for="estado">Estado</label>
+							<select class="form-control" id="estado" required>
+								<option value="">Selecione o estado</option>
+								<option value="sp">São Paulo</option>
+								<option value="rj">Rio de Janeiro</option>
+								<option value="mg">Minas Gerais</option>
+							</select>
+						</div>
+						<div class="form-group mb-3">
+							<label class="label" for="municipio">Município</label>
+							<select class="form-control" id="municipio" required>
+								<option value="">Selecione o município</option>
+								<option value="saopaulo">São Paulo</option>
+								<option value="riodejaneiro">Rio de Janeiro</option>
+								<option value="belohorizonte">Belo Horizonte</option>
+							</select>
+						</div>
+
+						<!-- <div class="checkbox-wrap d-flex align-items-center">
 							<input type="checkbox" id="aluno" name="type" value="aluno">
 							<label for="aluno" class="checkbox-wrap-label">Aluno</label>
 							<input type="checkbox" id="funcionario" name="type" value="funcionario">
 							<label for="funcionario" class="checkbox-wrap-label">Funcionário</label>
 						</div>
+					-->
 
 						<div class="container">
 							<div class="toggle-forms">
-							  <button class="btn active" data-form="form1">Formulário 1</button>
-							  <button class="btn" data-form="form2">Formulário 2</button>
+								<button class="btn active" data-form="form1">Aluno</button>
+								<button class="btn" data-form="form2">Funcionário</button>
 							</div>
 							<div class="forms-container">
-							  <form id="form1" class="form active">
-								<!-- Campos do formulário 1 -->
-								<label for="campo1">Campo 1:</label>
-								<input type="text" id="campo1" name="campo1">
-								<label for="campo2">Campo 2:</label>
-								<input type="text" id="campo2" name="campo2">
-								<button type="submit">Enviar</button>
-							  </form>
-							  <form id="form2" class="form">
-								<!-- Campos do formulário 2 -->
-								<label for="campo3">Campo 3:</label>
-								<input type="text" id="campo3" name="campo3">
-								<label for="campo4">Campo 4:</label>
-								<input type="text" id="campo4" name="campo4">
-								<button type="submit">Enviar</button>
-							  </form>
+								<form id="form1" class="form active">
+									<div class="form-group mb-3">
+										<label class="label" for="name">Usuário</label>
+										<input type="text" class="form-control" placeholder="Username" required>
+									</div>
+									<div class="form-group mb-3">
+										<label class="label" for="password">Senha</label>
+										<input type="password" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group">
+										<button type="submit"
+											class="form-control btn btn-primary rounded submit px-3">Entrar</button>
+									</div>
+									<div class="form-group d-md-flex">
+										<div class="w-100 text-left">
+											<label class="checkbox-wrap checkbox-primary mb-0">Lembrar
+												<input type="checkbox" checked>
+												<span class="checkmark"></span>
+											</label>
+											<a href="#">Esqueci a senha</a>
+										</div>
+									</div>
+								</form>
+								<form id="form2" class="form">
+									<form action="#" class="signin-form">
+										<div class="form-group mb-3">
+											<label class="label" for="name">CPF</label>
+											<input type="text" class="form-control" placeholder="Username" required>
+										</div>
+										<div class="form-group mb-3">
+											<label class="label" for="password">Senha</label>
+											<input type="password" class="form-control" placeholder="Password" required>
+										</div>
+										<div class="form-group">
+											<button type="submit"
+												class="form-control btn btn-primary rounded submit px-3">Acesso ao portal do aluno</button>
+										</div>
+										<div class="form-group">
+											<button type="submit"
+												class="form-control btn btn-primary rounded submit px-3">Acesso ao portal do gestor</button>
+										</div>
+										<div class="form-group d-md-flex">
+											<div class="w-100 text-left">
+												<label class="checkbox-wrap checkbox-primary mb-0">Lembrar
+													<input type="checkbox" checked>
+													<span class="checkmark"></span>
+												</label>
+												<a href="#">Esqueci a senha</a>
+											</div>
+										</div>
+									</form>
 							</div>
-						  </div>
-						  
+						</div>
 
-
-							<form action="#" class="signin-form">
-			      		<div class="form-group mb-3">
-			      			<label class="label" for="name">Usuário</label>
-			      			<input type="text" class="form-control" placeholder="Username" required>
-			      		</div>
-		            <div class="form-group mb-3">
-		            	<label class="label" for="password">Senha</label>
-		              <input type="password" class="form-control" placeholder="Password" required>
-		            </div>
-		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Entrar</button>
-		            </div>
-		            <div class="form-group d-md-flex">
-		            	<div class="w-50 text-left">
-			            	<label class="checkbox-wrap checkbox-primary mb-0">Lembrar
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="w-50 text-md-right">
-										<a href="#">Esqueci a senha</a>
-									</div>
-		            </div>
-		          </form>
-		         <!-- <p class="text-center">Aluno? <a data-toggle="tab" href="#signup">Acesse o portal</a></p> -->
-		        </div>
-		      </div>
+						<!-- <p class="text-center">Aluno? <a data-toggle="tab" href="#signup">Acesse o portal</a></p> -->
+					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
 	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 
+</body>
 
-
-<script>
-
-const estadoSelect = document.getElementById('estado');
-const municipioSelect = document.getElementById('municipio');
-
-estadoSelect.onchange = function() {
-  // Limpa o conteúdo anterior do elemento
-  const checkboxWrap = document.querySelector('.checkbox-wrap');
-  checkboxWrap.innerHTML = '';
-
-  // Cria o elemento checkbox
-  const alunoCheckbox = document.createElement('input');
-  alunoCheckbox.type = 'checkbox';
-  alunoCheckbox.id = 'aluno';
-  alunoCheckbox.name = 'type';
-  alunoCheckbox.value = 'aluno';
-
-  const alunoLabel = document.createElement('label');
-  alunoLabel.for = 'aluno';
-  alunoLabel.className = 'checkbox-wrap-label';
-  alunoLabel.textContent = 'Aluno';
-
-  const funcionarioCheckbox = document.createElement('input');
-  funcionarioCheckbox.type = 'checkbox';
-  funcionarioCheckbox.id = 'funcionario';
-  funcionarioCheckbox.name = 'type';
-  funcionarioCheckbox.value = 'funcionario';
-
-  const funcionarioLabel = document.createElement('label');
-  funcionarioLabel.for = 'funcionario';
-  funcionarioLabel.className = 'checkbox-wrap-label';
-  funcionarioLabel.textContent = 'Funcionário';
-
-  // Adiciona os elementos checkbox ao elemento .checkbox-wrap
-  checkboxWrap.appendChild(alunoCheckbox);
-  checkboxWrap.appendChild(alunoLabel);
-  checkboxWrap.appendChild(funcionarioCheckbox);
-  checkboxWrap.appendChild(funcionarioLabel);
-};
-
-municipioSelect.onchange = function() {
-  // Chama a função onchange do elemento estado para atualizar os checkboxes
-  estadoSelect.onchange();
-};
-
-
-	const btns = document.querySelectorAll('.toggle-forms .btn');
-const forms = document.querySelectorAll('.forms-container .form');
-
-btns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Remove a classe "active" de todos os botões e formulários
-    btns.forEach(btn => btn.classList.remove('active'));
-    forms.forEach(form => form.classList.remove('active'));
-    // Adiciona a classe "active" ao botão e formulário selecionados
-    const formId = btn.getAttribute('data-form');
-    const form = document.querySelector(`#${formId}`);
-    btn.classList.add('active');
-    form.classList.add('active');
-  });
-});
-
-</script>
-
-	</body>
 </html>
-

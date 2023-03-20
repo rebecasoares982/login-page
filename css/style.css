@@ -12099,6 +12099,16 @@ h5,
 .form {
   display: none;
 }
+
 .form.active {
   display: block;
+}
+
+.logo-sigem {
+  width: 500px;
+  height: 250px;
+}
+
+.esqueci-senha {
+  word-wrap: normal
 }
