@@ -5,7 +5,7 @@
 
 })(jQuery);
 
-
+//Surgimento do formulário de aluno e funcionário
 const btns = document.querySelectorAll('.toggle-forms .btn');
 const forms = document.querySelectorAll('.forms-container .form');
 
