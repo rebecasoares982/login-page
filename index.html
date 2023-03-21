@@ -53,49 +53,19 @@
 							</select>
 						</div>
 
-						<!-- <div class="checkbox-wrap d-flex align-items-center">
-							<input type="checkbox" id="aluno" name="type" value="aluno">
-							<label for="aluno" class="checkbox-wrap-label">Aluno</label>
-							<input type="checkbox" id="funcionario" name="type" value="funcionario">
-							<label for="funcionario" class="checkbox-wrap-label">Funcionário</label>
-						</div>
-					-->
+						<div id="form-div" style="display:none;">
 
-						<div class="container">
-							<div class="toggle-forms">
-								<button class="btn active" data-form="form1">Aluno</button>
-								<button class="btn" data-form="form2">Funcionário</button>
-							</div>
-							<div class="forms-container">
-								<form id="form1" class="form active">
-									<div class="form-group mb-3">
-										<label class="label" for="name">Nº de matrícula</label>
-										<input type="text" class="form-control" placeholder="nº de matrícula" required>
-									</div>
-									<div class="form-group mb-3">
-										<label class="label" for="password">Senha</label>
-										<input type="password" class="form-control" placeholder="Senha" required>
-									</div>
-									<div class="form-group">
-										<button type="submit"
-											class="form-control btn btn-primary rounded submit px-3">Entrar</button>
-									</div>
-									<div class="form-group d-md-flex">
-										<div class="w-100 text-left">
-											<!-- <label class="checkbox-wrap checkbox-primary mb-0">Lembrar
-												<input type="checkbox" checked>
-												<span class="checkmark"></span>
-											</label>
-											-->
-											<a href="#">Esqueci a senha</a>
-										</div>
-									</div>
-								</form>
-								<form id="form2" class="form">
-									<form action="#" class="signin-form">
+							<div class="container">
+								<div class="toggle-forms">
+									<button class="btn active" data-form="form1">Aluno</button>
+									<button class="btn" data-form="form2">Funcionário</button>
+								</div>
+								<div class="forms-container">
+									<form id="form1" class="form active">
 										<div class="form-group mb-3">
-											<label class="label" for="name">CPF</label>
-											<input type="text" class="form-control" placeholder="nº do CPF" required>
+											<label class="label" for="name">Nº de matrícula</label>
+											<input type="text" class="form-control" placeholder="Nº de matrícula"
+												required>
 										</div>
 										<div class="form-group mb-3">
 											<label class="label" for="password">Senha</label>
@@ -103,13 +73,7 @@
 										</div>
 										<div class="form-group">
 											<button type="submit"
-												class="form-control btn btn-primary rounded submit px-3">Acessar
-												atividades remotas</button>
-										</div>
-										<div class="form-group">
-											<button type="submit"
-												class="form-control btn btn-primary rounded submit px-3">Acessar a área
-												administrativa</button>
+												class="form-control btn btn-primary rounded submit px-3">Entrar</button>
 										</div>
 										<div class="form-group d-md-flex">
 											<div class="w-100 text-left">
@@ -122,6 +86,41 @@
 											</div>
 										</div>
 									</form>
+									<form id="form2" class="form">
+										<form action="#" class="signin-form">
+											<div class="form-group mb-3">
+												<label class="label" for="name">CPF</label>
+												<input type="text" class="form-control" placeholder="Nº do CPF"
+													required>
+											</div>
+											<div class="form-group mb-3">
+												<label class="label" for="password">Senha</label>
+												<input type="password" class="form-control" placeholder="Senha"
+													required>
+											</div>
+											<div class="form-group">
+												<button type="submit"
+													class="form-control btn btn-primary rounded submit px-3">Acessar
+													atividades remotas</button>
+											</div>
+											<div class="form-group">
+												<button type="submit"
+													class="form-control btn btn-primary rounded submit px-3">Acessar a
+													área
+													administrativa</button>
+											</div>
+											<div class="form-group d-md-flex">
+												<div class="w-100 text-left">
+													<!-- <label class="checkbox-wrap checkbox-primary mb-0">Lembrar
+												<input type="checkbox" checked>
+												<span class="checkmark"></span>
+											</label>
+											-->
+													<a href="#">Esqueci a senha</a>
+												</div>
+											</div>
+										</form>
+								</div>
 							</div>
 						</div>
 
@@ -141,3 +140,11 @@
 </body>
 
 </html>
+
+<!-- <div class="checkbox-wrap d-flex align-items-center">
+							<input type="checkbox" id="aluno" name="type" value="aluno">
+							<label for="aluno" class="checkbox-wrap-label">Aluno</label>
+							<input type="checkbox" id="funcionario" name="type" value="funcionario">
+							<label for="funcionario" class="checkbox-wrap-label">Funcionário</label>
+						</div>
+					-->
