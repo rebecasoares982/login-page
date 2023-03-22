@@ -47,6 +47,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  zoom: 78%;
 }
 
 article,
@@ -63,7 +64,8 @@ section {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -71,13 +73,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-
-  max-width: 1200px;
-  /* Define a largura máxima da página */
-  margin: 0 auto;
-  /* Centraliza o conteúdo da página */
-
-
 }
 
 [tabindex="-1"]:focus {
@@ -11756,7 +11751,7 @@ h5,
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
 }
 
 .ftco-no-pt {
@@ -11780,6 +11775,7 @@ h5,
 
 .wrap {
   width: 100%;
+  height: 760px;
   overflow: hidden;
   background: #fff;
   border-radius: 5px;
@@ -11949,7 +11945,6 @@ h5,
   }
 }
 
-/* Show the checkmark when checked */
 .checkbox-wrap input:checked~.checkmark:after {
   display: block;
   content: "\f14a";
@@ -12104,6 +12099,7 @@ h5,
   max-height: 150px;
   width: auto;
   height: auto;
+  transform: scale(1.3);
 }
 
 .img-banner {
@@ -12125,9 +12121,19 @@ h5,
   }
 }
 
-
 /*.esqueci-senha {
   word-wrap: normal
 }
 */
 
+/* Oculta a barra de rolagem visível */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Adiciona uma barra de rolagem personalizada */
+.scrollbar {
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
