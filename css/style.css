@@ -12109,12 +12109,22 @@ h5,
 .img-banner {
   vertical-align: baseline;
   border-style: none;
-  max-width: 620px;
-  max-height: 800px;
+  max-width: 100%;
+  max-height: none;
   width: 600px;
-  height: 600px;
-  padding-top: 20px;
+  height: auto;
 }
+
+/* Para dispositivos móveis com largura menor que 768 pixels */
+@media (max-width: 767px) {
+  .img-banner {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: none;
+  }
+}
+
 
 /*.esqueci-senha {
   word-wrap: normal
