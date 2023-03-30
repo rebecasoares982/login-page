@@ -12161,3 +12161,7 @@ h5,
 ::selection {
   background-color: #ffeeba;
 }
+
+.esquecisenha-enviar {
+  width: 100px;
+}
