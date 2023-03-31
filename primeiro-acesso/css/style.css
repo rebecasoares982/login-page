@@ -12157,11 +12157,11 @@ h5,
   background-color: #ffeeba;
 }
 
-.esquecisenha-enviar {
+.validar {
   width: 100%;
 }
 
-.esquecisenha-voltar {
+.voltar {
   width: 150px;
 }
 
@@ -12169,4 +12169,26 @@ h6,
 .h6 {
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.step-contents .step-content.active {
+  display: block;
+}
+
+.step-contents .step-content {
+  display: none;
+}
+
+.error {
+  color: #e65252 !important;
+}
+
+.w-500px {
+  width: 500px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .w-500px {
+      width: 450px;
+  }
 }
