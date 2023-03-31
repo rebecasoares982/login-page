@@ -415,11 +415,6 @@ h5,
   font-size: 1.25rem;
 }
 
-h6,
-.h6 {
-  font-size: 1rem;
-}
-
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -12168,4 +12163,10 @@ h5,
 
 .esquecisenha-voltar {
   width: 150px;
+}
+
+h6,
+.h6 {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
